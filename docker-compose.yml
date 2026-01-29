@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: interviewpilot-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/interviewpilot
+      - DEBUG=False
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    depends_on:
+      - db
+    volumes:
+      - ./backend/logs:/app/logs
+    networks:
+      - interviewpilot
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: interviewpilot-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - interviewpilot
+
+  db:
+    image: postgres:15-alpine
+    container_name: interviewpilot-db
+    environment:
+      - POSTGRES_DB=interviewpilot
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - interviewpilot
+
+  redis:
+    image: redis:7-alpine
+    container_name: interviewpilot-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - interviewpilot
+
+networks:
+  interviewpilot:
+    driver: bridge
+
+volumes:
+  postgres_data:

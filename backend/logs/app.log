@@ -1,0 +1,393 @@
+2026-01-28 16:06:47 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 16:06:51 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 16:06:53 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 16:07:31 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 16:08:25 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 16:08:43 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 16:09:35 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 16:10:52 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 16:54:42 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 16:55:56 - app.services.user_service - WARNING - Login attempt with non-existent email: lakkusrujan@gmail.com
+2026-01-28 16:55:56 - app.api.auth_routes - WARNING - Login failed: Invalid email or password
+2026-01-28 16:55:56 - app.main - WARNING - HTTP exception 401: Invalid email or password
+2026-01-28 17:10:38 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:36:46 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:36:46 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:36:52 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:36:52 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:36:52 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:37:28 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:37:56 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:38:27 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:41:21 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:41:45 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:42:20 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:49:31 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:49:59 - app.services.user_service - ERROR - Error authenticating user: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 09:49:59 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 09:49:59 - app.main - WARNING - HTTP exception 401: Authentication failed
+2026-01-29 09:50:03 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 09:50:03 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 09:50:03 - app.main - WARNING - HTTP exception 401: Authentication failed
+2026-01-29 09:52:43 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:53:44 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:54:02 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:54:47 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:57:50 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:59:08 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:01:38 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:04:01 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:05:12 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:05:54 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:07:06 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:07:34 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:08:06 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:08:42 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:09:05 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:11:00 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:11:27 - app.services.user_service - ERROR - Error authenticating user: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:11:27 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:12:28 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:12:46 - app.services.user_service - ERROR - Error authenticating user: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:12:46 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:13:17 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:13:17 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:13:20 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:13:20 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:15:28 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:15:28 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:15:33 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:15:33 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:29:21 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:39:24 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:44:21 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:44:23 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:49:23 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:49:23 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:52:27 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:52:27 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:52:27 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:52:27 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:59:16 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-29 10:59:16 - app.utils.security - ERROR - Error hashing password: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-01-29 10:59:16 - app.services.user_service - ERROR - Error creating user: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-01-29 10:59:16 - app.api.auth_routes - WARNING - Signup failed - validation: Failed to create user: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-01-29 10:59:16 - app.main - WARNING - HTTP exception 400: Failed to create user: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-01-29 10:59:18 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:59:20 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:59:21 - app.services.user_service - WARNING - Login attempt with non-existent email: lakkusrujan@gmail.com
+2026-01-29 10:59:21 - app.api.auth_routes - WARNING - Login failed: Invalid email or password
+2026-01-29 10:59:21 - app.main - WARNING - HTTP exception 401: Invalid email or password
+2026-01-29 11:02:02 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-29 11:02:02 - app.utils.security - ERROR - Error hashing password: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-01-29 11:02:02 - app.services.user_service - ERROR - Error creating user: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-01-29 11:02:02 - app.api.auth_routes - WARNING - Signup failed - validation: Failed to create user: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-01-29 11:02:02 - app.main - WARNING - HTTP exception 400: Failed to create user: password cannot be longer than 72 bytes, truncate manually if necessary (e.g. my_password[:72])
+2026-01-29 11:02:04 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 11:02:04 - app.services.user_service - WARNING - Login attempt with non-existent email: lakkusrujan@gmail.com
+2026-01-29 11:02:04 - app.api.auth_routes - WARNING - Login failed: Invalid email or password
+2026-01-29 11:02:04 - app.main - WARNING - HTTP exception 401: Invalid email or password
+2026-01-29 11:02:39 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-29 11:02:40 - app.services.user_service - INFO - User created successfully: test@test.com
+2026-01-29 11:02:40 - app.api.auth_routes - INFO - User signed up: test@test.com
+2026-01-29 11:04:32 - app.services.user_service - ERROR - Error creating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 11:04:32 - app.api.auth_routes - WARNING - Signup failed - validation: Failed to create user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 11:07:04 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 11:08:53 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-29 11:08:53 - app.services.user_service - INFO - User created successfully: lakkusrujan@gmail.com
+2026-01-29 11:08:53 - app.api.auth_routes - INFO - User signed up: lakkusrujan@gmail.com
+2026-01-29 11:08:56 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:08:56 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:09:58 - app.services.user_service - ERROR - Error creating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 11:09:58 - app.api.auth_routes - WARNING - Signup failed - validation: Failed to create user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 11:10:26 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 11:10:26 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 11:11:47 - app.services.user_service - ERROR - Error creating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 11:11:47 - app.api.auth_routes - WARNING - Signup failed - validation: Failed to create user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 11:13:45 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 11:14:30 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-29 11:14:30 - app.services.user_service - INFO - User created successfully: newuser@test.com
+2026-01-29 11:14:30 - app.api.auth_routes - INFO - User signed up: newuser@test.com
+2026-01-29 11:20:11 - app.services.user_service - WARNING - Attempt to create duplicate user: lakkusrujan@gmail.com
+2026-01-29 11:20:11 - app.api.auth_routes - WARNING - Signup failed - duplicate user: User with email lakkusrujan@gmail.com already exists
+2026-01-29 11:20:11 - app.main - WARNING - HTTP exception 409: User with email lakkusrujan@gmail.com already exists
+2026-01-29 11:20:33 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:20:33 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:20:37 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:20:37 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:20:40 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:20:40 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:20:55 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:20:55 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:20:57 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:20:57 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:20:58 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:20:58 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:20:59 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:20:59 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:21:00 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:21:00 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:21:01 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:21:01 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:21:02 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:21:02 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:21:02 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:21:02 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:21:10 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:21:10 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:21:12 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:21:12 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:21:14 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:21:14 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:21:46 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:21:46 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:21:55 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:21:55 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:23:50 - app.services.user_service - WARNING - Attempt to create duplicate user: lakkusrujan@gmail.com
+2026-01-29 11:23:50 - app.api.auth_routes - WARNING - Signup failed - duplicate user: User with email lakkusrujan@gmail.com already exists
+2026-01-29 11:23:50 - app.main - WARNING - HTTP exception 409: User with email lakkusrujan@gmail.com already exists
+2026-01-29 11:24:30 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:24:30 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:25:50 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:25:50 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:25:50 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:25:50 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:26:22 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:26:22 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:27:02 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:27:02 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:29:06 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:29:06 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:30:26 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:30:26 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 11:30:26 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 11:30:26 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 12:15:06 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 12:19:52 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 12:19:54 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 12:20:55 - app.utils.security - ERROR - Error decoding token: Signature has expired.
+2026-01-29 12:20:55 - app.main - WARNING - HTTP exception 401: Invalid authentication credentials
+2026-01-29 12:21:21 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-29 12:21:21 - app.services.user_service - WARNING - Failed login attempt for user: lakkusrujan@gmail.com
+2026-01-29 12:21:21 - app.api.auth_routes - WARNING - Login failed: Invalid email or password
+2026-01-29 12:21:21 - app.main - WARNING - HTTP exception 401: Invalid email or password
+2026-01-29 12:21:22 - app.services.user_service - WARNING - Failed login attempt for user: lakkusrujan@gmail.com
+2026-01-29 12:21:22 - app.api.auth_routes - WARNING - Login failed: Invalid email or password
+2026-01-29 12:21:22 - app.main - WARNING - HTTP exception 401: Invalid email or password
+2026-01-29 12:21:45 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 12:21:45 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 12:21:45 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 12:21:45 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 12:31:31 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:00:22 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:00:22 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:00:28 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:02:58 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:02:58 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:05:22 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:22:18 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-29 13:22:18 - app.services.user_service - INFO - User created successfully: test_verify_success@example.com
+2026-01-29 13:22:18 - app.api.auth_routes - INFO - User signed up: test_verify_success@example.com
+2026-01-29 13:22:26 - app.services.user_service - INFO - User authenticated successfully: test_verify_success@example.com
+2026-01-29 13:22:26 - app.api.auth_routes - INFO - User logged in: test_verify_success@example.com
+2026-01-29 13:22:35 - app.utils.security - ERROR - Error decoding token: Invalid header string: 'utf-8' codec can't decode byte 0xa2 in position 15: invalid start byte
+2026-01-29 13:22:35 - app.main - WARNING - HTTP exception 401: Invalid authentication credentials
+2026-01-29 13:22:44 - app.services.user_service - INFO - User authenticated successfully: test_verify_success@example.com
+2026-01-29 13:22:44 - app.api.auth_routes - INFO - User logged in: test_verify_success@example.com
+2026-01-29 13:22:44 - app.agents.base_agent - ERROR - Error calling OpenAI: OpenAI API key not configured
+2026-01-29 13:22:44 - app.agents.base_agent - WARNING - Primary LLM (openai) failed: OpenAI call failed: OpenAI API key not configured, trying fallback
+2026-01-29 13:22:44 - app.agents.base_agent - ERROR - Error calling Anthropic: Anthropic API key not configured
+2026-01-29 13:22:44 - app.agents.base_agent - ERROR - Both LLMs failed: Anthropic call failed: Anthropic API key not configured
+2026-01-29 13:22:44 - app.agents.practice_agent - ERROR - PracticeAgent.get_next_step failed: Failed to get response from LLM services
+2026-01-29 13:22:44 - app.api.practice_routes - ERROR - Error starting practice: unhashable type: 'dict'
+2026-01-29 13:22:44 - app.main - WARNING - HTTP exception 500: unhashable type: 'dict'
+2026-01-29 13:24:36 - app.services.user_service - INFO - User authenticated successfully: test_verify_success@example.com
+2026-01-29 13:24:36 - app.api.auth_routes - INFO - User logged in: test_verify_success@example.com
+2026-01-29 13:24:38 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:24:38 - app.main - WARNING - HTTP exception 400: Unsupported file format: md. Only PDF and DOCX are allowed.
+2026-01-29 13:26:18 - app.utils.security - ERROR - Error decoding token: Signature has expired.
+2026-01-29 13:26:18 - app.main - WARNING - HTTP exception 401: Invalid authentication credentials
+2026-01-29 13:26:25 - app.utils.security - ERROR - Error decoding token: Signature has expired.
+2026-01-29 13:26:25 - app.main - WARNING - HTTP exception 401: Invalid authentication credentials
+2026-01-29 13:29:10 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:29:27 - app.utils.security - ERROR - Error decoding token: Signature has expired.
+2026-01-29 13:29:27 - app.main - WARNING - HTTP exception 401: Invalid authentication credentials
+2026-01-29 13:34:10 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:36:46 - app.main - WARNING - HTTP exception 403: Not authenticated
+2026-01-29 13:36:48 - app.main - WARNING - HTTP exception 403: Not authenticated
+2026-01-29 13:37:51 - app.utils.security - ERROR - Error decoding token: Signature has expired.
+2026-01-29 13:37:51 - app.main - WARNING - HTTP exception 401: Invalid authentication credentials
+2026-01-29 13:40:16 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-29 13:40:17 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 13:40:17 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 13:40:17 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 13:40:17 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 13:40:36 - app.services.resume_service - INFO - Analyzing resume SRUJAN_LAKKU_RESUME.pdf for role software developer
+2026-01-29 13:40:36 - app.agents.base_agent - ERROR - Error calling OpenAI: OpenAI API key not configured
+2026-01-29 13:40:36 - app.agents.base_agent - WARNING - Primary LLM (openai) failed: OpenAI call failed: OpenAI API key not configured, trying fallback
+2026-01-29 13:40:36 - app.agents.base_agent - ERROR - Error calling Anthropic: Anthropic API key not configured
+2026-01-29 13:40:36 - app.agents.base_agent - ERROR - Both LLMs failed: Anthropic call failed: Anthropic API key not configured
+2026-01-29 13:40:36 - app.agents.resume_analyzer_agent - ERROR - ResumeAnalyzerAgent failed: Failed to get response from LLM services
+2026-01-29 13:42:14 - app.main - WARNING - HTTP exception 403: Not authenticated
+2026-01-29 13:44:06 - app.api.auth_routes - INFO - User logged out: lakkusrujan@gmail.com
+2026-01-29 13:44:09 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 13:44:16 - app.main - WARNING - HTTP exception 403: Not authenticated
+2026-01-29 13:44:38 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-01-29 13:44:38 - app.services.user_service - INFO - User authenticated successfully: lakkusrujan@gmail.com
+2026-01-29 13:44:38 - app.api.auth_routes - INFO - User logged in: lakkusrujan@gmail.com
+2026-01-29 13:45:02 - app.services.interview_service - INFO - Interview created: 1 for user 2
+2026-01-29 13:45:02 - app.api.interview_routes - INFO - Interview created: 1
+2026-01-29 13:45:02 - app.main - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'get_attribute_error', 'loc': ('response', 'questions'), 'msg': 'Error extracting attribute: OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (1,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)', 'input': <app.models.database.Interview object at 0x000002313FFE4F90>, 'ctx': {'error': 'OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (1,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)'}, 'url': 'https://errors.pydantic.dev/2.5/v/get_attribute_error'}
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 20, in __call__
+    raise e
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 292, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 155, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'get_attribute_error', 'loc': ('response', 'questions'), 'msg': 'Error extracting attribute: OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (1,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)', 'input': <app.models.database.Interview object at 0x000002313FFE4F90>, 'ctx': {'error': 'OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (1,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)'}, 'url': 'https://errors.pydantic.dev/2.5/v/get_attribute_error'}
+
+2026-01-29 13:47:39 - app.services.interview_service - INFO - Interview created: 2 for user 2
+2026-01-29 13:47:39 - app.api.interview_routes - INFO - Interview created: 2
+2026-01-29 13:47:39 - app.main - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'get_attribute_error', 'loc': ('response', 'questions'), 'msg': 'Error extracting attribute: OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (2,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)', 'input': <app.models.database.Interview object at 0x0000023141372C90>, 'ctx': {'error': 'OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (2,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)'}, 'url': 'https://errors.pydantic.dev/2.5/v/get_attribute_error'}
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 20, in __call__
+    raise e
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 292, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 155, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'get_attribute_error', 'loc': ('response', 'questions'), 'msg': 'Error extracting attribute: OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (2,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)', 'input': <app.models.database.Interview object at 0x0000023141372C90>, 'ctx': {'error': 'OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (2,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)'}, 'url': 'https://errors.pydantic.dev/2.5/v/get_attribute_error'}
+
+2026-01-29 13:47:50 - app.services.interview_service - INFO - Interview created: 3 for user 2
+2026-01-29 13:47:50 - app.api.interview_routes - INFO - Interview created: 3
+2026-01-29 13:47:50 - app.main - ERROR - Unhandled exception: 1 validation errors:
+  {'type': 'get_attribute_error', 'loc': ('response', 'questions'), 'msg': 'Error extracting attribute: OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (3,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)', 'input': <app.models.database.Interview object at 0x00000231402A1BD0>, 'ctx': {'error': 'OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (3,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)'}, 'url': 'https://errors.pydantic.dev/2.5/v/get_attribute_error'}
+Traceback (most recent call last):
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 20, in __call__
+    raise e
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 292, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\lakku\AppData\Local\Programs\Python\Python311\Lib\site-packages\fastapi\routing.py", line 155, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'get_attribute_error', 'loc': ('response', 'questions'), 'msg': 'Error extracting attribute: OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (3,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)', 'input': <app.models.database.Interview object at 0x00000231402A1BD0>, 'ctx': {'error': 'OperationalError: (sqlite3.OperationalError) no such column: interview_session_questions.question_type\n[SQL: SELECT interview_session_questions.id AS interview_session_questions_id, interview_session_questions.interview_id AS interview_session_questions_interview_id, interview_session_questions.question_text AS interview_session_questions_question_text, interview_session_questions.question_type AS interview_session_questions_question_type, interview_session_questions.user_answer AS interview_session_questions_user_answer, interview_session_questions.answer_transcript AS interview_session_questions_answer_transcript, interview_session_questions.question_score AS interview_session_questions_question_score, interview_session_questions.question_feedback AS interview_session_questions_question_feedback, interview_session_questions.difficulty_level AS interview_session_questions_difficulty_level, interview_session_questions.topic AS interview_session_questions_topic, interview_session_questions.ideal_answer AS interview_session_questions_ideal_answer, interview_session_questions.problem_statement AS interview_session_questions_problem_statement, interview_session_questions.expected_approach AS interview_session_questions_expected_approach, interview_session_questions.code_solution AS interview_session_questions_code_solution, interview_session_questions.created_at AS interview_session_questions_created_at \nFROM interview_session_questions \nWHERE ? = interview_session_questions.interview_id]\n[parameters: (3,)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)'}, 'url': 'https://errors.pydantic.dev/2.5/v/get_attribute_error'}
+
+2026-01-29 13:54:09 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 14:01:24 - app.services.resume_service - INFO - Analyzing resume SRUJAN_LAKKU_RESUME.docx for role software developer
+2026-01-29 14:01:24 - app.agents.base_agent - ERROR - Error calling OpenAI: OpenAI API key not configured
+2026-01-29 14:01:24 - app.agents.base_agent - WARNING - Primary LLM (openai) failed: OpenAI call failed: OpenAI API key not configured, trying fallback
+2026-01-29 14:01:24 - app.agents.base_agent - ERROR - Error calling Anthropic: Anthropic API key not configured
+2026-01-29 14:01:24 - app.agents.base_agent - ERROR - Both LLMs failed: Anthropic call failed: Anthropic API key not configured
+2026-01-29 14:01:24 - app.agents.resume_analyzer_agent - ERROR - ResumeAnalyzerAgent failed: Failed to get response from LLM services
+2026-01-29 14:13:34 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 14:13:34 - app.utils.database - INFO - Database tables created successfully

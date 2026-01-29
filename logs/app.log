@@ -1,0 +1,16 @@
+2026-01-28 19:24:46 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 19:40:38 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 19:41:39 - app.utils.database - INFO - Database tables created successfully
+2026-01-28 19:42:21 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:38:56 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:41:54 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:55:09 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 09:59:29 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:00:58 - app.services.user_service - ERROR - Error authenticating user: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:00:58 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:00:58 - app.main - WARNING - HTTP exception 401: Authentication failed
+2026-01-29 10:00:59 - app.services.user_service - ERROR - Error authenticating user: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'Mapper[Interview(interviews)]'. Original exception was: Multiple classes found for path "InterviewQuestion" in the registry of this declarative base. Please use a fully module-qualified path.
+2026-01-29 10:00:59 - app.api.auth_routes - WARNING - Login failed: Authentication failed
+2026-01-29 10:00:59 - app.main - WARNING - HTTP exception 401: Authentication failed
+2026-01-29 10:05:27 - app.utils.database - INFO - Database tables created successfully
+2026-01-29 10:06:31 - app.utils.database - INFO - Database tables created successfully

@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark mode theme with neon accents */
+:root {
+  --bg-primary: #0a0e27;
+  --bg-secondary: #1a1f3a;
+  --bg-tertiary: #252d4a;
+  --text-primary: #ffffff;
+  --text-secondary: #a0aec0;
+  --accent-primary: #00ff88;
+  --accent-secondary: #00d4ff;
+  --accent-danger: #ff0055;
+  --accent-warning: #ffaa00;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.glass-effect {
+  background: rgba(26, 31, 58, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 136, 0.1);
+}
+
+.neon-text {
+  color: var(--accent-primary);
+  text-shadow: 0 0 10px var(--accent-primary);
+}
+
+.neon-border {
+  border: 1px solid var(--accent-primary);
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}

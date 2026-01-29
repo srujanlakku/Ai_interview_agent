@@ -1,0 +1,50 @@
+/**
+ * Code Rain Background Animation
+ * Matrix-style falling characters with glassmorphism overlay
+ */
+
+.code-rain-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-code-rain);
+    pointer-events: none;
+}
+
+/* Overlay to dim the code rain effect */
+.code-rain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        rgba(10, 14, 39, 0.7) 0%,
+        rgba(5, 8, 18, 0.85) 50%,
+        rgba(10, 14, 39, 0.7) 100%);
+    z-index: var(--z-code-rain);
+    pointer-events: none;
+}
+
+/* Optional: Add vignette effect */
+@keyframes vignette {
+    0%, 100% {
+        box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.code-rain-overlay::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: vignette 4s ease-in-out infinite;
+    pointer-events: none;
+}

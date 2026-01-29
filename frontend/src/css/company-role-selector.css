@@ -1,0 +1,576 @@
+/**
+ * Company and Role Selector Styles
+ * Glassmorphism design with neon accents
+ */
+
+/* ========================
+   COMPANY SELECTOR STYLES
+   ======================== */
+
+.company-selector-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f4b 100%);
+    padding: 60px 20px;
+    animation: fadeIn 0.6s ease-in;
+}
+
+.company-selector-header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: slideDown 0.6s ease-out;
+}
+
+.company-selector-header h2 {
+    font-size: 2.8em;
+    background: linear-gradient(135deg, #00D9FF, #00FF88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-shadow: 0 0 30px rgba(0, 217, 255, 0.3);
+}
+
+.company-selector-header p {
+    font-size: 1.2em;
+    color: #a0aec0;
+    font-weight: 300;
+}
+
+/* Filter Tabs */
+.company-filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    animation: slideUp 0.6s ease-out 0.1s both;
+}
+
+.filter-tab {
+    padding: 10px 24px;
+    border: 2px solid rgba(0, 217, 255, 0.3);
+    background: rgba(0, 217, 255, 0.05);
+    color: #00D9FF;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.filter-tab:hover {
+    background: rgba(0, 217, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.2);
+}
+
+.filter-tab.active {
+    background: linear-gradient(135deg, #00D9FF, #00FF88);
+    color: #000a15;
+    border-color: #00D9FF;
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.6);
+    transform: translateY(-4px);
+}
+
+/* Company Grid */
+.company-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1400px;
+    margin: 0 auto 50px;
+    animation: fadeIn 0.6s ease-out 0.2s both;
+}
+
+/* Company Card */
+.company-card {
+    background: rgba(20, 28, 60, 0.8);
+    border: 2px solid #00D9FF;
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.company-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.1), transparent 50%);
+    pointer-events: none;
+}
+
+.company-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 217, 255, 0.3);
+    border-color: #00FF88;
+}
+
+.company-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.company-card-header h3 {
+    font-size: 1.4em;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+}
+
+.company-type-badge {
+    background: linear-gradient(135deg, #00D9FF, #00FF88);
+    color: #000a15;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.company-card-body {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+}
+
+.company-description {
+    color: #cbd5e0;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.company-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.meta-item {
+    display: flex;
+    gap: 8px;
+    font-size: 0.85em;
+}
+
+.meta-label {
+    color: #7c8299;
+    font-weight: 600;
+    min-width: 80px;
+}
+
+.meta-value {
+    color: #a0aec0;
+    flex-grow: 1;
+}
+
+.btn-select-company {
+    background: linear-gradient(135deg, #00D9FF, #00FF88);
+    color: #000a15;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 0.95em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.btn-select-company:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
+}
+
+.btn-select-company:active {
+    transform: scale(0.98);
+}
+
+/* Company Stats */
+.company-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    animation: slideUp 0.6s ease-out 0.3s both;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.stat-label {
+    color: #7c8299;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.stat-value {
+    color: #00D9FF;
+    font-size: 1.8em;
+    font-weight: 800;
+    text-shadow: 0 0 20px rgba(0, 217, 255, 0.4);
+}
+
+/* ========================
+   ROLE SELECTOR STYLES
+   ======================== */
+
+.role-selector-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0e27 0%, #1a1f4b 100%);
+    padding: 40px 20px;
+    animation: fadeIn 0.6s ease-in;
+}
+
+.role-selector-header {
+    position: relative;
+    margin-bottom: 50px;
+    animation: slideDown 0.6s ease-out;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 8px 16px;
+    color: #00D9FF;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    color: #00FF88;
+    transform: translateX(-4px);
+}
+
+.header-content h2 {
+    font-size: 2.8em;
+    background: linear-gradient(135deg, #00D9FF, #00FF88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.header-subtitle {
+    color: #a0aec0;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+/* Level Filter Tabs */
+.role-filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    animation: slideUp 0.6s ease-out 0.1s both;
+}
+
+.level-tab {
+    padding: 10px 24px;
+    border: 2px solid rgba(0, 217, 255, 0.3);
+    background: rgba(0, 217, 255, 0.05);
+    color: #00D9FF;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+}
+
+.level-tab:hover {
+    background: rgba(0, 217, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.2);
+}
+
+.level-tab.active {
+    background: linear-gradient(135deg, #00D9FF, #00FF88);
+    color: #000a15;
+    border-color: #00D9FF;
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.6);
+    transform: translateY(-4px);
+}
+
+/* Role Grid */
+.role-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    animation: fadeIn 0.6s ease-out 0.2s both;
+}
+
+/* Role Card */
+.role-card {
+    background: rgba(20, 28, 60, 0.8);
+    border: 2px solid rgba(0, 217, 255, 0.3);
+    border-left: 4px solid #00D9FF;
+    border-radius: 16px;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.role-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(0, 217, 255, 0.1), transparent 50%);
+    pointer-events: none;
+}
+
+.role-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 217, 255, 0.3);
+    border-color: #00FF88;
+}
+
+.role-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.role-card-header h3 {
+    font-size: 1.3em;
+    color: #fff;
+    margin: 0;
+    font-weight: 700;
+}
+
+.role-level-badge {
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 0.75em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.role-card-body {
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    flex-grow: 1;
+}
+
+.role-description {
+    color: #cbd5e0;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.role-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85em;
+    color: #a0aec0;
+}
+
+.detail-icon {
+    font-size: 1.1em;
+    min-width: 20px;
+}
+
+.btn-select-role {
+    background: linear-gradient(135deg, #00D9FF, #00FF88);
+    color: #000a15;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 0.95em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.btn-select-role:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
+}
+
+.btn-select-role:active {
+    transform: scale(0.98);
+}
+
+/* Role Stats */
+.role-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    animation: slideUp 0.6s ease-out 0.3s both;
+}
+
+/* Notifications */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 16px 24px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    font-weight: 600;
+    font-size: 0.95em;
+    z-index: 9999;
+    animation: slideInRight 0.4s ease-out;
+}
+
+.success-notification {
+    background: rgba(0, 255, 136, 0.2);
+    border: 2px solid #00FF88;
+    color: #00FF88;
+}
+
+.error-notification {
+    background: rgba(255, 68, 68, 0.2);
+    border: 2px solid #FF4444;
+    color: #FF4444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ========================
+   RESPONSIVE DESIGN
+   ======================== */
+
+@media (max-width: 768px) {
+    .company-selector-header h2,
+    .role-selector-header h2 {
+        font-size: 2em;
+    }
+
+    .company-grid,
+    .role-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .company-filter-tabs,
+    .role-filter-tabs {
+        flex-direction: column;
+    }
+
+    .filter-tab,
+    .level-tab {
+        width: 100%;
+    }
+
+    .company-stats,
+    .role-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .company-selector-wrapper,
+    .role-selector-wrapper {
+        padding: 30px 12px;
+    }
+
+    .company-selector-header h2,
+    .role-selector-header h2 {
+        font-size: 1.6em;
+    }
+
+    .company-card,
+    .role-card {
+        padding: 16px;
+    }
+
+    .btn-select-company,
+    .btn-select-role {
+        font-size: 0.85em;
+        padding: 10px 16px;
+    }
+}
