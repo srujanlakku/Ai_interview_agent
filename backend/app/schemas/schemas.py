@@ -260,3 +260,8 @@ class PracticeFeedbackResponse(BaseModel):
     improvement_tips: List[str]
     score_estimate: Optional[float] = None
 
+
+class AnswerSubmitRequest(BaseModel):
+    """Request schema for submitting interview answer"""
+    answer: str
+

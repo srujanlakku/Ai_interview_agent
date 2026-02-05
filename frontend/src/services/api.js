@@ -55,7 +55,7 @@ export const profileAPI = {
 // Interview API
 export const interviewAPI = {
   createInterview: (userId, interviewData) =>
-    apiClient.post(`/interviews/create?user_id=${userId}`, interviewData),
+    apiClient.post('/interviews/create', { user_id: userId, ...interviewData }),
   getInterview: (interviewId, userId) =>
     apiClient.get(`/interviews/${interviewId}?user_id=${userId}`),
   getUserInterviews: (userId) =>
@@ -65,7 +65,7 @@ export const interviewAPI = {
   startQuestion: (interviewId, userId) =>
     apiClient.post(`/interviews/${interviewId}/start-question?user_id=${userId}`),
   submitAnswer: (interviewId, userId, questionId, answer) =>
-    apiClient.post(`/interviews/${interviewId}/submit-answer`, {
+    apiClient.post(`/api/interviews/${interviewId}/submit-answer`, {
       user_id: userId,
       question_id: questionId,
       answer,

@@ -94,7 +94,7 @@ async def get_covered_topics(user_id: int, limit: int = 15,
         if current_user.get("user_id") != user_id:
             raise HTTPException(status_code=403, detail="Not authorized")
         
-        topics = memory_agent.get_covered_topics(db, user_id, limit)
+        topics = memory_agent.get_covered_topics(db, user_id)
         return {
             "success": True,
             "topics": topics,

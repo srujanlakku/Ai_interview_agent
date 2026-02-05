@@ -5,7 +5,7 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
 from app.utils.database import get_db
-from app.schemas.schemas import InterviewCreate, InterviewResponse, InterviewQuestionCreate, PerformanceMetrics
+from app.schemas.schemas import InterviewCreate, InterviewResponse, InterviewQuestionCreate, PerformanceMetrics, AnswerSubmitRequest
 from app.services.interview_service import InterviewService
 from app.utils.security import get_current_user
 from app.agents.interviewer_agent import InterviewerAgent
@@ -104,14 +104,14 @@ async def start_next_question(
 @router.post("/{interview_id}/submit-answer")
 async def submit_answer(
     interview_id: int, 
-    answer: str,
+    answer_data: AnswerSubmitRequest,
     db: Session = Depends(get_db),
     current_user: dict = Depends(get_current_user)
 ):
     """Submit answer and get next step from multi-agent supervisor"""
     try:
         user_id = current_user.get("user_id")
-        new_state = await InterviewService.process_agent_step(db, interview_id, user_id, answer)
+        new_state = await InterviewService.process_agent_step(db, interview_id, user_id, answer_data.answer)
         
         return {
             "success": True,

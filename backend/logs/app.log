@@ -391,3 +391,164 @@ fastapi.exceptions.ResponseValidationError: 1 validation errors:
 2026-01-29 14:01:24 - app.agents.resume_analyzer_agent - ERROR - ResumeAnalyzerAgent failed: Failed to get response from LLM services
 2026-01-29 14:13:34 - app.utils.database - INFO - Database tables created successfully
 2026-01-29 14:13:34 - app.utils.database - INFO - Database tables created successfully
+2026-02-02 09:47:46 - app.utils.database - INFO - Database tables created successfully
+2026-02-04 14:56:12 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 14:56:50 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 14:57:59 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 14:58:11 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 14:58:35 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 14:58:41 - app.agents.question_selector_agent - INFO - Selecting question for  at medium difficulty
+2026-02-04 14:58:41 - app.agents.question_selector_agent - INFO - No suitable question in repository, generating with LLM
+2026-02-04 14:58:42 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-02-04 14:58:42 - app.agents.base_agent - WARNING - QuestionSelectorAgent: Attempt 1 failed: Client error '401 Unauthorized' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401. Retrying in 1s...
+2026-02-04 14:58:44 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-02-04 14:58:44 - app.agents.base_agent - WARNING - QuestionSelectorAgent: Attempt 2 failed: Client error '401 Unauthorized' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401. Retrying in 2s...
+2026-02-04 14:58:47 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2026-02-04 14:58:47 - app.agents.base_agent - ERROR - QuestionSelectorAgent: All 3 attempts failed: Client error '401 Unauthorized' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-04 14:58:47 - app.agents.question_selector_agent - ERROR - LLM question generation failed: LLM call failed after 3 attempts: Client error '401 Unauthorized' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2026-02-04 15:04:37 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:04:59 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:06:24 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:06:27 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:06:27 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:06:37 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:06:41 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:06:45 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:06:48 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:06:54 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:06:59 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:07:04 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:07:05 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:07:07 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:07:08 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:07:08 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:07:08 - app.agents.base_agent - WARNING - QuestionSelectorAgent: OpenAI API key not configured. Using fallback responses.
+2026-02-04 15:07:08 - app.agents.base_agent - WARNING - EvaluationAgent: OpenAI API key not configured. Using fallback responses.
+[corr_id=a06d2a65-8fd1-4313-9378-d44f28d07157 session=08555db6] 2026-02-04 15:07:08 - interview.session - INFO - Interview session started for Srujan Lakku | Metrics: candidate_name=Srujan Lakku | role=AI/ML Engineer | experience_level=junior | company=Not specified | session_id=08555db6
+2026-02-04 15:07:19 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:07:19 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:10:55 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:11:15 - app.agents.base_agent - WARNING - QuestionSelectorAgent: OpenAI API key not configured. Using fallback responses.
+2026-02-04 15:11:15 - app.agents.base_agent - WARNING - EvaluationAgent: OpenAI API key not configured. Using fallback responses.
+[corr_id=3221047a-7773-4e7c-8371-a0d65a72f1f3 session=602b829e] 2026-02-04 15:11:15 - interview.session - INFO - Interview session started for  | Metrics: candidate_name= | role= | experience_level= | company=Not specified | session_id=602b829e
+[corr_id=3221047a-7773-4e7c-8371-a0d65a72f1f3 session=602b829e] 2026-02-04 15:11:15 - app.agents.question_selector_agent - INFO - Selecting question for  at medium difficulty
+[corr_id=3221047a-7773-4e7c-8371-a0d65a72f1f3 session=602b829e] 2026-02-04 15:11:15 - app.agents.question_selector_agent - INFO - No suitable question in repository, generating with LLM
+[corr_id=3221047a-7773-4e7c-8371-a0d65a72f1f3 session=602b829e] 2026-02-04 15:11:15 - app.agents.base_agent - INFO - QuestionSelectorAgent: Using fallback response due to missing/invalid API key
+2026-02-04 15:11:21 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:11:23 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:11:23 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:11:26 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:11:31 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:11:41 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:11:44 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:11:48 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:12:05 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:12:09 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:12:10 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:12:11 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:12:11 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:12:11 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:12:11 - app.agents.base_agent - WARNING - QuestionSelectorAgent: OpenAI API key not configured. Using fallback responses.
+2026-02-04 15:12:11 - app.agents.base_agent - WARNING - EvaluationAgent: OpenAI API key not configured. Using fallback responses.
+[corr_id=b5604556-2449-4eb9-a1c9-172e6b49d377 session=b9250047] 2026-02-04 15:12:11 - interview.session - INFO - Interview session started for Srujan Lakku | Metrics: candidate_name=Srujan Lakku | role=AI/ML Engineer | experience_level=junior | company=Not specified | session_id=b9250047
+[corr_id=b5604556-2449-4eb9-a1c9-172e6b49d377 session=b9250047] 2026-02-04 15:12:11 - app.agents.question_selector_agent - INFO - Selecting question for AI/ML Engineer at medium difficulty
+[corr_id=b5604556-2449-4eb9-a1c9-172e6b49d377 session=b9250047] 2026-02-04 15:12:11 - app.agents.question_selector_agent - INFO - No suitable question in repository, generating with LLM
+2026-02-04 15:16:46 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:16:51 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:16:51 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:16:55 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:03 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:04 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:10 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:14 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:15 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:16 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:16 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:16 - app.agents.base_agent - WARNING - QuestionSelectorAgent: OpenAI API key not configured. Using fallback responses.
+2026-02-04 15:17:16 - app.agents.base_agent - WARNING - EvaluationAgent: OpenAI API key not configured. Using fallback responses.
+[corr_id=61cdfab5-6a6d-4eb7-b303-95167091a1dd session=9aefee57] 2026-02-04 15:17:16 - interview.session - INFO - Interview session started for Srujan | Metrics: candidate_name=Srujan | role=AI/ML Engineer | experience_level=junior | company=Not specified | session_id=9aefee57
+[corr_id=61cdfab5-6a6d-4eb7-b303-95167091a1dd session=9aefee57] 2026-02-04 15:17:16 - app.agents.question_selector_agent - INFO - Selecting question for AI/ML Engineer at medium difficulty
+[corr_id=61cdfab5-6a6d-4eb7-b303-95167091a1dd session=9aefee57] 2026-02-04 15:17:16 - app.agents.question_selector_agent - INFO - No suitable question in repository, generating with LLM
+[corr_id=61cdfab5-6a6d-4eb7-b303-95167091a1dd session=9aefee57] 2026-02-04 15:17:16 - app.agents.base_agent - INFO - QuestionSelectorAgent: Using fallback response due to missing/invalid API key
+[corr_id=61cdfab5-6a6d-4eb7-b303-95167091a1dd session=9aefee57] 2026-02-04 15:17:16 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:18 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:24 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:28 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:28 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:17:28 - app.agents.evaluation_agent - INFO - Evaluating technical answer
+2026-02-04 15:17:28 - app.agents.base_agent - INFO - EvaluationAgent: Using fallback response due to missing/invalid API key
+2026-02-04 15:17:28 - evaluation - INFO - Answer evaluated | Metrics: session_id=9aefee57 | question_topic=General Experience | score=5.0
+2026-02-04 15:17:28 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:21:24 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:21:46 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:21:51 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:21:51 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:28:36 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:29:46 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:29:47 - app.utils.session_manager - INFO - New session created: 8bae0356d8d7
+2026-02-04 15:32:11 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:32:12 - app.utils.session_manager - INFO - New session created: a3e32dd3e19e
+2026-02-04 15:32:19 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:32:19 - app.utils.session_manager - INFO - New session created: fa5143b8bc40
+2026-02-04 15:33:32 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:33:33 - app.utils.session_manager - INFO - New session created: 3f1d9e7a9e64
+2026-02-04 15:34:19 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:34:20 - app.utils.session_manager - INFO - New session created: 3b4e3e5572a8
+2026-02-04 15:34:47 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:34:47 - app.utils.session_manager - INFO - New session created: 76f34fd2f87f
+2026-02-04 15:40:03 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:40:38 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:40:39 - app.utils.session_manager - INFO - New session created: ac873fdef441
+2026-02-04 15:40:59 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-04 15:40:59 - app.utils.session_manager - INFO - New session created: ae481869a8f4
+2026-02-05 08:35:05 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 08:35:10 - app.utils.session_manager - INFO - New session created: 2225ec812448
+2026-02-05 08:38:09 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 08:38:52 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 08:38:52 - interview.evaluation - INFO - Answer evaluated for question: Q1 | Metrics: session_id=test | question_id=Q1 | score=8.5 | confidence_band=Strong | evaluation_time_ms=120.5
+2026-02-05 08:45:35 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 08:45:35 - interview.evaluation - INFO - Answer evaluated for question: Q1 | Metrics: session_id=test | question_id=Q1 | score=8.5 | confidence_band=Strong | evaluation_time_ms=120.5
+2026-02-05 08:45:52 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 08:45:53 - app.utils.session_manager - INFO - New session created: 44ffe42003d3
+2026-02-05 09:02:03 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 09:02:03 - app.utils.session_manager - INFO - New session created: fa288add19e7
+2026-02-05 09:31:36 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 09:32:36 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 09:33:45 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 09:35:26 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 09:35:26 - app.prompts.prompt_manager - INFO - Registered template: interviewer_question_v1.0
+2026-02-05 09:35:26 - app.prompts.prompt_manager - INFO - Registered template: evaluate_answer_v1.0
+2026-02-05 09:35:26 - app.prompts.prompt_manager - INFO - Registered template: reflect_interaction_v1.0
+2026-02-05 09:35:26 - app.prompts.prompt_manager - INFO - Registered template: explain_concept_v1.0
+2026-02-05 09:35:26 - app.prompts.prompt_manager - INFO - Default prompt templates loaded
+2026-02-05 09:35:28 - app.prompts.prompt_manager - INFO - OpenAI model initialized
+2026-02-05 09:35:30 - app.utils.session_manager - INFO - New session created: b35ec2fed8f7
+2026-02-05 09:35:46 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 09:35:46 - app.utils.session_manager - INFO - New session created: 7aca35171d39
+2026-02-05 09:36:29 - app.utils.structured_logging - INFO - Enhanced logging initialized | Metrics: log_level=INFO | log_format=detailed | max_file_size=10485760 | backup_count=10
+2026-02-05 09:36:29 - app.utils.session_manager - INFO - Restoring session: b35ec2fed8f7
+2026-02-05 09:36:29 - app.utils.session_manager - INFO - Session restored: 858ad9841dbb
+2026-02-05 12:21:43 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:21:43 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:10 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:10 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:10 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:10 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:10 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:10 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:28 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:28 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:28 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:28 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:28 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:22:28 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:24:06 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:24:06 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:28:45 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 12:28:46 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 15:22:43 - app.utils.database - INFO - Database tables created successfully
+2026-02-05 15:22:43 - app.utils.database - INFO - Database tables created successfully

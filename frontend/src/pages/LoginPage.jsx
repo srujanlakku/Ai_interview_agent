@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../utils/store';
-import { Mail, Lock, ArrowRight } from 'lucide-react';
+import { Mail, Lock, ArrowRight, Briefcase, Shield, TrendingUp } from 'lucide-react';
 
 export const LoginPage = () => {
   const navigate = useNavigate();
@@ -28,51 +28,59 @@ export const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0a0e27] to-[#1a1f3a] flex items-center justify-center p-4">
-      <div className="glass-effect p-8 rounded-lg shadow-2xl w-full max-w-md">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold neon-text mb-2">InterviewPilot</h1>
-          <p className="text-gray-400">Welcome back</p>
+    <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden bg-black">
+      <div className="cyber-panel p-8 rounded-lg w-full max-w-md relative z-10">
+        <div className="mb-8 text-center">
+          <div className="flex justify-center mb-4">
+            <div className="bg-red-600 p-3 rounded-full glow-border">
+              <Briefcase className="text-white" size={24} />
+            </div>
+          </div>
+          <h1 className="text-3xl font-bold cyber-section-title mb-2">NEXUS INTERVIEW</h1>
+          <p className="text-white text-sm uppercase tracking-widest opacity-80">SYSTEM ACCESS PROTOCOL</p>
         </div>
 
         {error && (
-          <div className="bg-red-500 bg-opacity-10 border border-red-500 text-red-300 p-3 rounded mb-6">
-            {error}
+          <div className="cyber-alert cyber-alert-danger mb-6 flex items-center gap-2">
+            <Shield size={16} />
+            <span className="font-mono">{error}</span>
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label className="block text-sm font-medium text-gray-300 mb-2">
-              Email
+            <label className="block text-sm font-mono text-white mb-2 flex items-center gap-2 uppercase tracking-wider">
+              <Mail size={16} className="text-red-500" />
+              USER IDENTIFICATION
             </label>
             <div className="relative">
-              <Mail className="absolute left-3 top-3 text-gray-500" size={20} />
+              <Mail className="absolute left-3 top-3.5 text-red-500" size={18} />
               <input
                 type="email"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full pl-10 pr-4 py-2 bg-[#1a1f3a] border border-gray-600 rounded focus:border-green-500 focus:outline-none text-white"
-                placeholder="you@example.com"
+                className="w-full pl-10 pr-4 py-3 bg-black border border-red-500 rounded-none focus:border-red-400 focus:outline-none text-white font-mono transition-all glow-border"
+                placeholder="ENTER IDENTIFICATION CODE"
                 required
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-300 mb-2">
-              Password
+            <label className="block text-sm font-mono text-white mb-2 flex items-center gap-2 uppercase tracking-wider">
+              <Lock size={16} className="text-red-500" />
+              AUTHENTICATION KEY
             </label>
             <div className="relative">
-              <Lock className="absolute left-3 top-3 text-gray-500" size={20} />
+              <Lock className="absolute left-3 top-3.5 text-red-500" size={18} />
               <input
                 type="password"
                 name="password"
                 value={formData.password}
                 onChange={handleChange}
-                className="w-full pl-10 pr-4 py-2 bg-[#1a1f3a] border border-gray-600 rounded focus:border-green-500 focus:outline-none text-white"
-                placeholder="Your password"
+                className="w-full pl-10 pr-4 py-3 bg-black border border-red-500 rounded-none focus:border-red-400 focus:outline-none text-white font-mono transition-all glow-border"
+                placeholder="••••••••"
                 required
               />
             </div>
@@ -80,19 +88,41 @@ export const LoginPage = () => {
 
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-green-500 to-cyan-500 text-black font-bold py-2 rounded hover:shadow-lg hover:shadow-green-500/50 transition flex items-center justify-center gap-2"
+            className="w-full cyber-btn cyber-btn-primary flex items-center justify-center gap-2 py-3 mt-2 font-mono uppercase tracking-wider"
           >
-            Login
-            <ArrowRight size={20} />
+            <span>INITIATE SYSTEM ACCESS</span>
+            <ArrowRight size={18} />
           </button>
         </form>
 
-        <p className="mt-6 text-center text-gray-400">
-          Don't have an account?{' '}
-          <a href="/signup" className="text-green-400 hover:text-green-300">
-            Sign up
+        <div className="mt-8 pt-6 border-t border-red-500">
+          <p className="text-center text-white text-sm mb-4 font-mono uppercase tracking-widest opacity-70">
+            &#62;&#62; NEW USER DETECTED &#60;&#60;
+          </p>
+          <a 
+            href="/signup" 
+            className="cyber-btn cyber-btn-secondary w-full flex items-center justify-center gap-2 py-3 font-mono uppercase tracking-wider"
+          >
+            <TrendingUp size={18} />
+            <span>REGISTER FOR ACCESS</span>
           </a>
-        </p>
+        </div>
+        
+        {/* System Status */}
+        <div className="mt-6 grid grid-cols-3 gap-3 text-center">
+          <div className="cyber-badge cyber-badge-success text-xs">
+            <Shield className="mx-auto mb-1" size={16} />
+            SECURE
+          </div>
+          <div className="cyber-badge text-xs">
+            <TrendingUp className="mx-auto mb-1" size={16} />
+            ACTIVE
+          </div>
+          <div className="cyber-badge cyber-badge-info text-xs">
+            <Briefcase className="mx-auto mb-1" size={16} />
+            ONLINE
+          </div>
+        </div>
       </div>
     </div>
   );

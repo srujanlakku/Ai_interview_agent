@@ -212,7 +212,7 @@ class APIClient {
     }
 
     async submitAnswer(interviewId, answer) {
-        return this.post(`/api/interviews/${interviewId}/submit-answer?answer=${encodeURIComponent(answer)}`, {});
+        return this.post(`/api/interviews/${interviewId}/submit-answer`, { answer: answer });
     }
 
     async getNextQuestion(interviewId) {

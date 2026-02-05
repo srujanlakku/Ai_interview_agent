@@ -75,6 +75,7 @@ class Router {
         // (Matched params already contain 'id' if route was /review/:id)
         if (path.startsWith('/review/') && matchedParams.id) {
             setTimeout(() => {
+                // Check if loadInterviewReview function exists (defined in InterviewReview.js)
                 if (typeof loadInterviewReview === 'function') {
                     loadInterviewReview(matchedParams.id);
                 }

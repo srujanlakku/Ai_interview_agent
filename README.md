@@ -1,324 +1,160 @@
-# InterviewPilot - Enterprise AI Interview Platform
+# 🎯 AI Interview Agent
 
-## 🎉 Project Status: PRODUCTION READY ✅
+A stunning, production-ready AI-powered technical interview preparation platform with a modern glassmorphism UI design.
 
-**Version**: 1.0.0  
-**Date**: January 29, 2026  
-**Status**: 95% Complete (All Core Features Implemented)
+## ✨ Features
 
----
+- **🤖 AI-Powered Interviewer** - Intelligent question selection with OpenAI integration
+- **📈 Adaptive Difficulty** - Questions adjust based on your performance
+- **💡 Real-time Feedback** - Get detailed evaluation and improvement suggestions
+- **🎯 Role-Specific Questions** - Tailored for 10+ technical roles
+- **📊 Comprehensive Results** - Score breakdown with strengths and weaknesses
+- **🎨 Modern UI** - Beautiful glassmorphism design with smooth animations
 
-## 📌 Quick Start (30 Seconds)
-
-```bash
-python start.py
-# Open: http://localhost:3000
-# Login: test@example.com / password123
-```
-
-**See [QUICK_REFERENCE.md](QUICK_REFERENCE.md) for more details**
-
----
-
-## 🎯 What is InterviewPilot?
-
-InterviewPilot is an **enterprise-grade AI interviewer platform** specifically designed for **Indian MNC candidates**. It combines:
-
-- 📚 **25+ Indian MNCs** (Google, Amazon, Microsoft, TCS, Infosys, etc.)
-- 💼 **11 Job Roles** (SDE, Backend, Frontend, Data Engineer, AI/ML, etc.)
-- ❓ **20+ Interview Questions** per company-role combination
-- 🎯 **Adaptive Difficulty** adjustment based on performance
-- 📊 **Progress Tracking** with readiness scores
-- 🤖 **AI Feedback** on answers (ready for LLM integration)
-
----
-
-## ✨ Key Features
-
-**AI Interview Platform**:
-- 🤖 Adaptive AI Interviewer with intelligent difficulty progression
-- 📚 Multi-modal Learning Materials (text, images, videos)
-- 🔍 Company-Specific Research Agent
-- 📊 Performance Analytics & Readiness Tracking
-- 💾 Long-term Memory System for personalized improvement
-- 🎙️ Voice & Text Interview Support
-- ✅ Production-grade error handling & reliability
-
-**India MNC Interview Intelligence** (NEW):
-- 🏢 **25 Indian MNCs** with company-specific questions
-- 💼 **11 Job Roles** with level-based progression
-- ❓ **20+ Repeated Questions** matching real interview patterns
-- 🎨 **Professional UI** with glassmorphism design
-- 📈 **Company+Role Readiness Scores**
-- 🔄 **Progress Tracking** per company and role
-
----
-
-## 📊 Project Metrics
-
-| Metric | Value |
-|--------|-------|
-| Backend Code | 1,400+ lines |
-| Frontend Code | 800+ lines |
-| Database Models | 7 |
-| API Endpoints | 10+ |
-| Companies | 25 |
-| Job Roles | 11 |
-| Interview Questions | 20+ |
-| Code Quality Errors | 0 ✅ |
-| Documentation | 2,000+ lines |
-| Test Coverage | 95%+ |
-
----
-
-## 📚 Documentation
-
-| Document | Purpose |
-|----------|---------|
-| [QUICK_REFERENCE.md](QUICK_REFERENCE.md) | **START HERE** - Quick reference card (2 min) |
-| [PROJECT_README.md](PROJECT_README.md) | Complete project overview (10 min) |
-| [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) | Detailed setup guide (15 min) |
-| [COMPLETION_SUMMARY.md](COMPLETION_SUMMARY.md) | What was built (10 min) |
-| [DELIVERABLES.md](DELIVERABLES.md) | Complete file listing (5 min) |
-
----
-
-## 🏗️ Architecture
-
-```
-InterviewPilot/
-├── backend/                    # Python FastAPI backend
-│   ├── app/
-│   │   ├── agents/            # AI agents (research, interview, evaluation, etc.)
-│   │   ├── api/               # API routes
-│   │   ├── models/            # Database models
-│   │   ├── schemas/           # Pydantic schemas
-│   │   ├── services/          # Business logic services
-│   │   ├── utils/             # Utilities (security, logging, exceptions)
-│   │   └── main.py            # FastAPI application
-│   ├── tests/                 # Test suite
-│   └── requirements.txt        # Python dependencies
-│
-├── frontend/                   # React frontend
-│   ├── src/
-│   │   ├── components/        # React components
-│   │   ├── pages/             # Page components
-│   │   ├── services/          # API client
-│   │   ├── utils/             # Utilities (store, helpers)
-│   │   ├── styles/            # CSS styles
-│   │   ├── App.jsx            # Main app component
-│   │   └── main.jsx           # Entry point
-│   ├── package.json           # Node dependencies
-│   └── vite.config.js         # Vite configuration
-│
-└── README.md
-```
-
-## Core Agents
-
-### 1. Research Agent
-- Researches company-specific interview patterns
-- Collects FAQs, interview rounds, evaluation criteria
-- Falls back to generalized knowledge if live research fails
-
-### 2. Interviewer Agent
-- Conducts realistic mock interviews
-- Adaptively adjusts difficulty based on performance
-- Generates follow-up questions for weak answers
-
-### 3. Learning Agent
-- Generates multi-modal preparation materials
-- Ranks content by relevance and difficulty
-- Adapts to user experience level and time constraints
-
-### 4. Evaluation Agent
-- Scores responses on multiple dimensions
-- Provides per-question feedback
-- Generates overall interview score (0-10)
-
-### 5. Memory Agent
-- Maintains long-term user memory
-- Tracks strengths, weaknesses, covered topics
-- Uses memory for personalized improvement plans
-
-## Getting Started
+## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.9+
-- Node.js 16+
-- PostgreSQL or SQLite
-- OpenAI or Anthropic API key
+- Python 3.10+
+- OpenAI API Key
 
-### Backend Setup
+### Installation
 
-1. **Navigate to backend directory:**
-   ```bash
-   cd backend
-   ```
-
-2. **Create virtual environment:**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Create `.env` file:**
-   ```bash
-   cp .env.example .env
-   ```
-
-5. **Update `.env` with your API keys:**
-   ```
-   OPENAI_API_KEY=your_key_here
-   ANTHROPIC_API_KEY=your_key_here
-   SECRET_KEY=change-this-in-production
-   ```
-
-6. **Run the server:**
-   ```bash
-   python -m uvicorn app.main:app --reload
-   ```
-
-   The backend will be available at `http://localhost:8000`
-
-### Frontend Setup
-
-1. **Navigate to frontend directory:**
-   ```bash
-   cd frontend
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server:**
-   ```bash
-   npm run dev
-   ```
-
-   The frontend will be available at `http://localhost:3000`
-
-## API Endpoints
-
-### Authentication
-- `POST /api/auth/signup` - Create new user
-- `POST /api/auth/login` - Login user
-- `POST /api/auth/logout` - Logout user
-- `GET /api/auth/me` - Get current user
-
-### Profile
-- `POST /api/profile/onboard` - Onboard user with profile
-- `GET /api/profile/{user_id}` - Get user profile
-- `POST /api/profile/{user_id}/prepare` - Generate preparation materials
-
-### Interviews
-- `POST /api/interviews/create` - Create new interview
-- `GET /api/interviews/{interview_id}` - Get interview details
-- `GET /api/interviews/user/{user_id}/list` - Get user interviews
-- `POST /api/interviews/{interview_id}/start-question` - Get next question
-- `POST /api/interviews/{interview_id}/submit-answer` - Submit answer
-- `POST /api/interviews/{interview_id}/finalize` - Finalize interview
-- `GET /api/interviews/{user_id}/statistics` - Get interview stats
-
-### Memory
-- `GET /api/memory/{user_id}/summary` - Get memory summary
-- `GET /api/memory/{user_id}/strengths` - Get strengths
-- `GET /api/memory/{user_id}/weaknesses` - Get weaknesses
-- `GET /api/memory/{user_id}/covered-topics` - Get covered topics
-- `GET /api/memory/{user_id}/missed-topics` - Get missed topics
-
-## Key Design Decisions
-
-### Error Handling
-- All external dependencies have fallback logic
-- Graceful degradation when APIs fail
-- Comprehensive error messages and logging
-- Retry logic with exponential backoff
-
-### Security
-- Password hashing with bcrypt
-- JWT token-based authentication
-- Session management with token expiration
-- Input validation on all endpoints
-
-### Performance
-- Async/await for non-blocking operations
-- Connection pooling for database
-- In-memory caching for research data
-- Lazy loading of learning materials
-
-### Reliability
-- Deterministic scoring logic
-- Explainable evaluation criteria
-- Audit logging for all operations
-- Database transaction support
-
-## Testing
-
-Run tests with pytest:
+1. **Clone the repository**
 ```bash
-cd backend
-pytest tests/ -v
+git clone https://github.com/srujanlakku/Ai_interview_agent.git
+cd Ai_interview_agent
 ```
 
-## Production Deployment
+2. **Set up the backend**
+```bash
+cd backend
+python -m venv .venv
 
-### Backend Deployment
+# Windows
+.venv\Scripts\activate
 
-1. **Set up environment variables:**
-   - Update `.env` with production values
-   - Use strong SECRET_KEY
-   - Configure database URL for PostgreSQL
+# Linux/Mac
+source .venv/bin/activate
 
-2. **Run migrations:**
-   ```bash
-   python -m alembic upgrade head
-   ```
+pip install -r requirements.txt
+```
 
-3. **Start with Gunicorn:**
-   ```bash
-   gunicorn app.main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker
-   ```
+3. **Configure environment**
+```bash
+# Create .env file in the backend folder
+echo "OPENAI_API_KEY=your_api_key_here" > .env
+```
 
-### Frontend Deployment
+4. **Run the application**
+```bash
+streamlit run app.py
+```
 
-1. **Build for production:**
-   ```bash
-   npm run build
-   ```
+5. **Open in browser**
+   - Navigate to: http://localhost:8501
 
-2. **Deploy `dist` folder to static hosting (AWS S3, Netlify, Vercel)**
+## 📁 Project Structure
 
-3. **Update API endpoint in production environment**
+```
+Interview-agent/
+├── backend/
+│   ├── app/
+│   │   ├── agents/           # AI agents (question selector, evaluator)
+│   │   │   ├── base_agent.py
+│   │   │   ├── evaluation_agent.py
+│   │   │   └── question_selector_agent.py
+│   │   ├── data/             # Question repository
+│   │   │   └── question_repository.py
+│   │   ├── memory/           # Session memory management
+│   │   │   ├── memory_manager.py
+│   │   │   └── interview_memory.py
+│   │   ├── schemas/          # Data models
+│   │   └── utils/            # Utilities
+│   ├── pages/                # Streamlit pages
+│   │   ├── home_page.py      # Landing page
+│   │   ├── login_page.py     # Profile setup
+│   │   ├── interview_page.py # Interview interface
+│   │   └── results_page.py   # Results dashboard
+│   ├── app.py                # Main Streamlit entry point
+│   ├── requirements.txt
+│   └── .env                  # Environment configuration
+└── frontend/                 # Original React frontend (alternative)
+```
 
-## Monitoring & Logging
+## 🎮 How to Use
 
-- All operations are logged to `./logs/app.log`
-- Structured logging with timestamps and levels
-- Real-time console output for development
-- Log rotation to prevent disk space issues
+1. **Start the App** - Run `streamlit run app.py`
+2. **Set Up Profile** - Enter your name, select role and experience level
+3. **Take Interview** - Answer AI-generated questions one at a time
+4. **Get Feedback** - Receive real-time evaluation on each answer
+5. **View Results** - See comprehensive score breakdown and recommendations
 
-## Contributing
+## 🎭 Supported Roles
 
-1. Follow PEP 8 style guide for Python
-2. Use ESLint for JavaScript/React
-3. Write tests for new features
-4. Update documentation accordingly
+- Backend Engineer
+- Frontend Engineer
+- Full Stack Developer
+- DevOps Engineer
+- AI/ML Engineer
+- Data Engineer
+- Mobile Developer
+- Security Engineer
+- Database Engineer
+- QA Engineer
+- Cloud Architect
+- System Administrator
 
-## License
+## 📊 Experience Levels
 
-Proprietary - InterviewPilot
+- **Junior (0-2 years)** - Entry-level questions, fundamental concepts
+- **Mid-level (2-5 years)** - Intermediate complexity, system design basics
+- **Senior (5-8 years)** - Advanced questions, architecture & leadership
+- **Principal (8+ years)** - Expert-level, strategic & complex scenarios
 
-## Support
+## ⚙️ Configuration
 
-For issues or questions, contact: support@interviewpilot.com
+### Environment Variables (.env)
+
+```env
+# Required
+OPENAI_API_KEY=sk-your-openai-api-key
+
+# Optional
+INTERVIEW_MAX_QUESTIONS=8
+LOG_LEVEL=INFO
+```
+
+## 🛠️ Technology Stack
+
+- **Frontend**: Streamlit with custom CSS (glassmorphism design)
+- **Backend**: Python 3.10+, AsyncIO
+- **AI**: OpenAI GPT-4/GPT-3.5 API
+- **State Management**: Streamlit session state
+- **Styling**: Custom CSS with animations
+
+## 📝 API Usage
+
+The app uses the following OpenAI API calls:
+- **Question Generation** - When local repository is exhausted
+- **Answer Evaluation** - For each submitted answer
+
+Estimated cost: ~$0.05-0.10 per full interview session (8 questions)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is proprietary. All rights reserved.
+
+## 💬 Support
+
+For issues or questions, please open a GitHub issue.
 
 ---
 

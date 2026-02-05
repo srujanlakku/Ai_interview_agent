@@ -1,183 +1,139 @@
 /**
- * Interview Review Page Component
- * Displays detailed review of interview with answers, ideal solutions, and feedback
+ * Interview Review Component
+ * Displays detailed review of an interview with all questions, answers, and feedback.
  */
 
 function InterviewReviewPage() {
     return `
-        <div class="review-container">
-            <div class="review-header">
-                <h1>Interview Review</h1>
-                <div id="reviewMeta" class="review-meta"></div>
+        <div class="interview-review-container">
+            <div class="glass-card review-header-card">
+                <h2>📋 Interview Review</h2>
+                <p>Detailed breakdown of your interview performance</p>
             </div>
-            
-            <div id="reviewQuestions" class="review-questions">
-                <!-- Questions will be loaded here -->
-            </div>
-            
-            <div class="review-actions">
-                <button onclick="window.router.goTo('/dashboard')" class="btn-secondary">
-                    Back to Dashboard
-                </button>
-                <button onclick="window.router.goTo('/interviews')" class="btn-primary">
-                    Start New Interview
-                </button>
+            <div id="interviewReviewContent" class="review-content">
+                <!-- Review content will be loaded here -->
             </div>
         </div>
     `;
 }
 
-/**
- * Load and display interview review
- */
 async function loadInterviewReview(interviewId) {
+    const container = document.getElementById('interviewReviewContent');
+
     try {
+        container.innerHTML = '<div class="loader-container"><div class="spinner"></div><p>Loading review...</p></div>';
+
         const review = await window.api.getInterviewReview(interviewId);
 
-        // Update meta information
-        const metaEl = document.getElementById('reviewMeta');
-        if (metaEl) {
-            metaEl.innerHTML = `
-                <div class="meta-item">
-                    <span class="meta-label">Company:</span>
-                    <span class="meta-value">${review.company_name || 'N/A'}</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Role:</span>
-                    <span class="meta-value">${review.job_role || 'N/A'}</span>
-                </div>
-                <div class="meta-item">
-                    <span class="meta-label">Overall Score:</span>
-                    <span class="meta-value score">${review.overall_score ? review.overall_score.toFixed(1) + '/10' : 'N/A'}</span>
-                </div>
-            `;
+        if (!review) {
+            container.innerHTML = '<p class="error-message">Failed to load interview review.</p>';
+            return;
         }
 
-        // Render questions
-        const questionsEl = document.getElementById('reviewQuestions');
-        if (questionsEl && review.questions) {
-            questionsEl.innerHTML = review.questions.map((q, index) =>
-                renderReviewQuestion(q, index + 1)
-            ).join('');
-        }
-
+        renderInterviewReview(review, container);
     } catch (error) {
-        console.error('Error loading review:', error);
-        const questionsEl = document.getElementById('reviewQuestions');
-        if (questionsEl) {
-            questionsEl.innerHTML = `
-                <div class="error-message">
-                    <p>Failed to load interview review: ${error.message}</p>
-                </div>
-            `;
-        }
+        console.error('Error loading interview review:', error);
+        container.innerHTML = '<p class="error-message">Failed to load interview review: ' + error.message + '</p>';
     }
 }
 
-/**
- * Render individual question review card
- */
-function renderReviewQuestion(question, number) {
-    const typeClass = `question-type-${question.question_type}`;
-    const scoreClass = getScoreClass(question.score);
+function renderInterviewReview(review, container) {
+    const overallScore = review.overall_score || 0;
+    const scoreColor = overallScore >= 8 ? '#00e676' : (overallScore >= 5 ? '#ffeb3b' : '#ff5252');
 
-    return `
-        <div class="review-question-card ${typeClass}">
-            <div class="question-header">
-                <span class="question-number">Question ${number}</span>
-                <span class="question-type-badge">${formatQuestionType(question.question_type)}</span>
-                ${question.score !== null && question.score !== undefined ?
-            `<span class="question-score ${scoreClass}">${question.score.toFixed(1)}/10</span>` :
-            ''}
+    container.innerHTML = `
+        <div class="glass-card score-summary-card">
+            <div class="score-summary">
+                <div class="main-score" style="border-color: ${scoreColor}">
+                    <span class="score-value" style="color: ${scoreColor}">${overallScore.toFixed(1)}</span>
+                    <span class="score-total">/ 10</span>
+                </div>
+                <div class="summary-info">
+                    <h3>${review.company_name || 'Interview'}</h3>
+                    <p>${review.job_role || 'Software Engineer'}</p>
+                </div>
             </div>
-            
-            <div class="question-content">
-                <h3>Question</h3>
-                <p class="question-text">${escapeHtml(question.question)}</p>
-                
-                ${question.question_type === 'coding' && question.coding_data ?
-            renderCodingProblem(question.coding_data) : ''}
-            </div>
-            
-            <div class="answer-section">
-                <div class="user-answer">
-                    <h4>Your Answer</h4>
-                    <div class="answer-content">
-                        ${question.candidate_answer ?
-            (question.question_type === 'coding' ?
-                `<pre><code>${escapeHtml(question.candidate_answer)}</code></pre>` :
-                `<p>${escapeHtml(question.candidate_answer)}</p>`) :
-            '<p class="no-answer">No answer provided</p>'}
-                    </div>
+        </div>
+        
+        <div class="questions-review-list">
+            ${renderQuestionsReview(review.questions || [])}
+        </div>
+    `;
+}
+
+function renderQuestionsReview(questions) {
+    if (questions.length === 0) {
+        return '<p class="no-questions">No questions found for this interview.</p>';
+    }
+
+    return questions.map((q, index) => {
+        const scoreColor = (q.score || 0) >= 7 ? '#00e676' : (q.score || 0) >= 4 ? '#ffeb3b' : '#ff5252';
+
+        return `
+            <div class="glass-card question-review-card">
+                <div class="question-header">
+                    <span class="question-number">Q${index + 1}</span>
+                    <span class="question-type badge">${q.question_type || 'General'}</span>
+                    ${q.score !== undefined ? `<span class="question-score" style="color: ${scoreColor}">${q.score.toFixed(1)}/10</span>` : ''}
                 </div>
                 
-                ${question.ideal_answer ? `
-                <div class="ideal-answer">
-                    <h4>Ideal Answer</h4>
-                    <div class="answer-content">
-                        ${question.question_type === 'coding' && question.coding_data ?
-                `<pre><code>${escapeHtml(question.coding_data.code_solution)}</code></pre>` :
-                `<p>${escapeHtml(question.ideal_answer)}</p>`}
+                <div class="question-body">
+                    <div class="question-text">
+                        <strong>Question:</strong>
+                        <p>${q.question}</p>
                     </div>
-                </div>` : ''}
+                    
+                    <div class="answer-section">
+                        <strong>Your Answer:</strong>
+                        <p class="candidate-answer">${q.candidate_answer || 'No answer provided'}</p>
+                    </div>
+                    
+                    ${q.ideal_answer ? `
+                        <div class="ideal-answer-section">
+                            <strong>Ideal Answer:</strong>
+                            <p class="ideal-answer">${q.ideal_answer}</p>
+                        </div>
+                    ` : ''}
+                    
+                    ${q.feedback ? `
+                        <div class="feedback-section">
+                            <strong>Feedback:</strong>
+                            <p class="feedback-text">${q.feedback}</p>
+                        </div>
+                    ` : ''}
+                    
+                    ${q.coding_data ? renderCodingData(q.coding_data) : ''}
+                </div>
             </div>
-            
-            ${question.feedback ? `
-            <div class="feedback-section">
-                <h4>Feedback</h4>
-                <p class="feedback-text">${escapeHtml(question.feedback)}</p>
-            </div>` : ''}
-        </div>
-    `;
+        `;
+    }).join('');
 }
 
-/**
- * Render coding problem details
- */
-function renderCodingProblem(codingData) {
+function renderCodingData(codingData) {
     return `
-        <div class="coding-problem-details">
-            <h4>Problem Statement</h4>
-            <p>${escapeHtml(codingData.problem_statement)}</p>
-            
-            <h4>Expected Approach</h4>
-            <p>${escapeHtml(codingData.expected_approach)}</p>
-            
-            <div class="difficulty-badge difficulty-${codingData.difficulty_level.toLowerCase()}">
-                ${codingData.difficulty_level}
+        <div class="coding-data-section">
+            <h4>Coding Problem Details</h4>
+            <div class="coding-detail">
+                <strong>Problem:</strong>
+                <p>${codingData.problem_statement}</p>
+            </div>
+            <div class="coding-detail">
+                <strong>Expected Approach:</strong>
+                <p>${codingData.expected_approach}</p>
+            </div>
+            <div class="coding-detail">
+                <strong>Sample Solution:</strong>
+                <pre class="code-solution"><code>${codingData.code_solution}</code></pre>
+            </div>
+            <div class="coding-detail">
+                <strong>Difficulty:</strong>
+                <span class="difficulty-badge ${codingData.difficulty_level.toLowerCase()}">${codingData.difficulty_level}</span>
             </div>
         </div>
     `;
 }
 
-/**
- * Format question type for display
- */
-function formatQuestionType(type) {
-    const typeMap = {
-        'soft_skill': 'Soft Skill',
-        'technical': 'Technical',
-        'coding': 'Coding'
-    };
-    return typeMap[type] || type;
-}
-
-/**
- * Get CSS class for score
- */
-function getScoreClass(score) {
-    if (score === null || score === undefined) return '';
-    if (score >= 8) return 'score-excellent';
-    if (score >= 6) return 'score-good';
-    if (score >= 4) return 'score-average';
-    return 'score-poor';
-}
-
-/**
- * Escape HTML to prevent XSS
- */
-function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
+// Export for use
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { InterviewReviewPage, loadInterviewReview, renderInterviewReview, renderQuestionsReview, renderCodingData };
 }
